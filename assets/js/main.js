@@ -1,6 +1,15 @@
 
 (function($) {
 
+	function ShowAndHide() {
+		var x = document.getElementById();
+		if (x.style.display == 'none') {
+			x.style.display = 'block';
+		} else {
+			x.style.display = 'none';
+		}
+	}
+
 	var	$window = $(window),
 		$body = $('body'),
 		$nav = $('#nav');

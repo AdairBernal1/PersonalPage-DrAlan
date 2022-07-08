@@ -12,15 +12,33 @@
 		<!-- Nav -->
 			<nav id="nav">
 				<ul class="container">
-					<li><a href="#top">Inicio</a></li>
-					<li><a href="#work">Formacion Academica</a></li>
-					<li><a href="#Laboral">Situacion Laboral</a></li>
-					<li><a href="#portfolio">Articulos de Investigacion</a></li>
-					<li><a href="#Presentacion">Presentaciones</a></li>
-					<li><a href="#cientificos">Participación en eventos cientificos</a></li>
-					<li><a href="#contact">Tesis dirigidas</a></li>
-					<li><a href="#contact">Sinodalias y evaluaciones</a></li>
-					<li><a href="#contact">Otras actividades</a></li>
+					<li><a href="#top">
+						Inicio
+					</a></li>
+					<li><a data-toggle="collapse" href="#FA" data-target="#collapseStudy" role="button" aria-expanded="false" aria-controls="collapseStudy">
+						Formacion Academica
+					</a></li>
+					<li><a data-toggle="collapse" href="#Laboral" data-target="#collapseWork" role="button" aria-expanded="false" aria-controls="collapseWork">
+						Situacion Laboral
+					</a></li>
+					<li><a data-toggle="collapse" href="#portfolio" data-target="#collapseArticulos" role="button" aria-expanded="false" aria-controls="collapseArticulos">
+						Articulos de Investigacion
+					</a></li>
+					<li><a data-toggle="collapse" href="#Presentacion" data-target="#accordion" role="button" aria-expanded="false" aria-controls="accordion">
+						Presentaciones
+					</a></li>
+					<li><a data-toggle="collapse" href="#cientificos" data-target="#collapseCientificos" role="button" aria-expanded="false" aria-controls="collapseCientificos">
+						Participación en eventos cientificos
+					</a></li>
+					<li><a href="#contact">
+						Tesis dirigidas
+					</a></li>
+					<li><a href="#contact">
+						Sinodalias y evaluaciones
+					</a></li>
+					<li><a href="#contact">
+						Otras actividades
+					</a></li>
 				</ul>
 			</nav>
 
@@ -42,14 +60,14 @@
 				</div>
 			</article>
 
-		<!-- Work -->
-			<article id="work" class="wrapper style2">
+		<!-- Formacion Academica -->
+			<article id="FA" class="wrapper style2">
 				<div class="container" style="display: block">
-					<header>
+					<header data-toggle="collapse" data-target="#collapseStudy" role="button" aria-expanded="false" aria-controls="collapseStudy">
 						<h2>Formacion Academica</h2>
 						<p>Mis estudios a través del tiempo.</p>
 					</header>
-					<div class="row aln-center">
+					<div id="collapseStudy" class="row aln-center collapse">
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<a href="#" class="image featured"><img src="images/uadeo_logo.jpg" alt="" /></a>
@@ -83,21 +101,21 @@
 								</p>
 							</section>
 						</div>
+						<footer>
+							<p>Estoy comprometido con mi pasion hacia la tecnología</p>
+						</footer>
 					</div>
-					<footer>
-						<p>Estoy comprometido con mi pasion hacia la tecnología</p>
-					</footer>
 				</div>
 			</article>
 
 			<!-- Situacion Laboral -->
 			<article id="Laboral" class="wrapper style2">
 				<div class="container">
-					<header>
+					<header data-toggle="collapse" data-target="#collapseWork" role="button" aria-expanded="false" aria-controls="collapseWork">
 						<h2>Mi Situacion Laboral.</h2>
 						<p>Enseñar para aprender, Construir el futuro de mis alumnos</p>
 					</header>
-					<div class="row aln-center">
+					<div id="collapseWork" class="row aln-center collapse">
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<a href="#" class="image featured"><img src="images/UAS_logo.png" alt="" /></a>
@@ -138,14 +156,14 @@
 				</div>
 			</article>
 
-		<!-- Portfolio -->
+		<!-- Articulos de Investigacion -->
 			<article id="portfolio" class="wrapper style3">
 				<div class="container">
-					<header>
+					<header data-toggle="collapse" data-target="#collapseArticulos" role="button" aria-expanded="false" aria-controls="collapseArticulos">
 						<h2>Mis Articulos de Investigacion.</h2>
 						<p>Actuales.</p>
 					</header>
-					<div class="row">
+					<div id="collapseArticulos" class="row collapse">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/articulopandemia.jpg" alt="" /></a>
@@ -214,21 +232,17 @@
 							</article>
 						</div>
 					</div>
-					<footer>
-						<p>¿Interesado en trabajar juntos?</p>
-						<a href="#contact" class="button large scrolly">Ir a contacto</a>
-					</footer>
 				</div>
 			</article>
 
 			<!-- Presentaciones y Seminarios Porfavor revisar el link https://getbootstrap.com/docs/4.0/components/collapse/ para consultar como activar el collapse-->
 			<article id="Presentacion" class="wrapper style2">
 				<div class="container">
-					<header>
+					<header data-toggle="collapse" data-target="#accordion" role="button" aria-expanded="true" aria-controls="accordion">
 						<h2>Presentaciones y Seminarios.</h2>
 						<p>Presentacion de mis articulos</p>
 					</header>
-					<div id="accordion">
+					<div id="accordion" class="collapse">
 						<div class="card">
 						  <div class="card-header" id="headingOne">
 							<h5 class="mb-0">
@@ -238,7 +252,7 @@
 							</h5>
 						  </div>
 					  
-						  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+						  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 							<div class="card-body">
 								In 4th Conference on Computer Science and Computer Engineering (CoCSCE '21) Tijuana, Baja California, Mayo del 2021
 							</div>
@@ -494,11 +508,11 @@
 			<!-- Participacion en eventos cientificos -->
 			<article id="cientificos" class="wrapper style2">
 				<div class="container">
-					<header>
-						<h2>Mi Participacion en eventos cientificos.</h2>
+					<header data-toggle="collapse" data-target="#collapseCientificos" role="button" aria-expanded="false" aria-controls="collapseCientificos">
+						<h2>Mi participacion en eventos cientificos.</h2>
 						<p></p>
 					</header>
-					<div class="row aln-center">
+					<div id="collapseCientificos"class="row aln-center collapse">
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<div class="card" style="width: 18rem;">
@@ -793,7 +807,7 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
+							<form action="https://formsubmit.co/adairoswaldo01@gmail.com" method="POST">
 								<div class="row">
 									<div class="col-6 col-12-small">
 										<input type="text" name="name" id="name" placeholder="Name" />
